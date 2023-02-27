@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/results_background"
+    android:orientation="vertical"
+    tools:context=".ResultActivity">
+
+
+
+    <TextView
+        android:id="@+id/resultados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Confira os resultados do IMC e a classificação respectiva abaixo:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultados"
+        android:layout_marginTop="30dp"
+        android:maxLength="5"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        tools:text="27.104" />
+
+    <TextView
+        android:id="@+id/textview_classificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_result"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        tools:text="Classificação: SOBREPESO" />
+
+
+    <TextView
+        android:id="@+id/tabela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_classificacao"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="155dp"
+        android:text="Confira abaixo a tabela:"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tabelaabaixo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabela"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="MENOR QUE 18.5   : ABAIXO DO PESO"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tabelanormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabelaabaixo"
+        android:layout_marginLeft="20dp"
+        android:text="ENTRE 18.5 E 24.9 : NORMAL"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tabelasobrepeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabelanormal"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:text="ENTRE 25.0 E 29.9 : SOBREPESO"/>
+
+    <TextView
+        android:id="@+id/tabelaobesidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabelasobrepeso"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:text="ENTRE 30.0 E 39.9 : OBESIDADE"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabelaobesidade"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:textSize="18sp"
+        android:text="ACIMA DE 40.0       : OBESIDADE GRAVE"/>
+
+</RelativeLayout>
